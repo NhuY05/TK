@@ -21,5 +21,16 @@ def ktgt():
 
 if __name__ == "__main__":
     print(ktgt())
+
+def ktgt():
+    gt=input("nHập:")
+    if gt.strip("-").isdigit():
+        gt=int(gt)
+        if -98<=gt<=90:
+            return gt
+        print("khl")
+        return(ktgt())
+if __name__ == "__main__":
+    print(ktgt())
     
 
